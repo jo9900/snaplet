@@ -2,7 +2,11 @@
 
 The selected product name is **Snaplet**, with bundle identifier `com.jo9900.Snaplet` and individual developer team **YUAN ZHENG (`54BTJHJKUU`)**. The intended App Store price is **Free**, with no in-app purchases.
 
-**Current release status:** The universal archive at `build/Snaplet.xcarchive` passed code-signature verification. After signing into Xcode, App Store export succeeded at `build/AppStore/Snaplet.pkg`: Cloud Managed Apple Distribution app signing, a Mac Team Store provisioning profile, and a Mac Developer Installer certificate all belong to team `54BTJHJKUU`. The package signature was verified. No successful upload, submission, or live listing has been recorded. The metadata below is a draft.
+The App Store title is **Snaplet: Capture & Annotate** because Apple reported that the standalone name Snaplet was already in use. The installed app and repository retain the name Snaplet.
+
+**Current release status:** [App Store Connect record `6812333384`](https://appstoreconnect.apple.com/apps/6812333384/distribution) was created for macOS with English (U.S.) as its primary language. Build **0.1.0 (1)** has been processed and associated with the app version. Export compliance was saved as **None of the algorithms mentioned above**, and the Missing Compliance warning has cleared. **Add for Review** passed metadata validation and created one draft submission. The version is **Ready for Review**, with **Item Ready to Submit** shown for **0.1.0 (1)**. The final **Submit for Review** action has not been executed, so the app has not been sent to review and is not live.
+
+The universal archive at `build/Snaplet.xcarchive` passed code-signature verification. App Store export succeeded at `build/AppStore/Snaplet.pkg`: Cloud Managed Apple Distribution app signing, a Mac Team Store provisioning profile, and a Mac Developer Installer certificate all belong to team `54BTJHJKUU`. The package signature was verified.
 
 ## Included in the project
 
@@ -10,26 +14,26 @@ The selected product name is **Snaplet**, with bundle identifier `com.jo9900.Sna
 - App Sandbox and user-selected file read/write access. Apple requires sandboxing for Mac App Store submissions. [Apple: Configuring the macOS App Sandbox](https://developer.apple.com/documentation/xcode/configuring-the-macos-app-sandbox)
 - Hardened runtime, original app icons, version/build numbers, utility category, and copyright metadata.
 - A privacy manifest declaring no tracking or data collection and app-local preferences under the `UserDefaults` reason `CA92.1`. Recheck this declaration whenever storage or dependencies change. [Apple: Required reason API declarations](https://developer.apple.com/documentation/bundleresources/app-privacy-configuration/nsprivacyaccessedapitypes/nsprivacyaccessedapitype)
-- A [privacy policy](PRIVACY.md). Publish it at a stable public URL and use that URL in App Store Connect; a privacy policy URL is required for all apps. [Apple: App privacy](https://developer.apple.com/help/app-store-connect/reference/app-privacy/)
+- A public [privacy policy](PRIVACY.md), with its URL saved for English and Simplified Chinese in App Store Connect. A privacy policy URL is required for all apps. [Apple: App privacy](https://developer.apple.com/help/app-store-connect/reference/app-privacy/)
 
 ## Owner steps before submission
 
 1. **Developer account:** Xcode is signed into the existing account and has access to team `54BTJHJKUU`. Confirm the current program agreement before submission. Free apps can be distributed under that agreement; paid-app agreements are for paid apps and in-app purchases. [Apple: Agreements](https://developer.apple.com/help/app-store-connect/manage-agreements/sign-and-update-agreements)
 2. **Signing:** Automatic distribution signing and local export have succeeded for `com.jo9900.Snaplet`, using `method=app-store-connect`, `destination=export`, and `signingStyle=automatic`. Keep signing assets and exported packages outside version control. [Apple: Certificates](https://developer.apple.com/help/account/certificates/certificates-overview/)
-3. **Validation:** Run the tests and the [manual checks](TESTING.md), including the sandboxed signed app, fresh permissions, Retina/multiple displays, saving outside the sandbox through the save dialog, and login-item enable/disable. Test on macOS 14 and a current release before claiming both.
-4. **Store record:** Create a macOS app record for Snaplet and its registered bundle identifier. Confirm that the selected name is available in App Store Connect. [Apple: Add a new app](https://developer.apple.com/help/app-store-connect/create-an-app-record/add-a-new-app)
-5. **Archive and upload:** In Xcode, select the Snaplet scheme and a Mac archive destination, choose **Product → Archive**, then validate and distribute through Organizer to App Store Connect. Use an Xcode version currently accepted by Apple. [Apple: Upload builds](https://developer.apple.com/help/app-store-connect/manage-builds/upload-builds)
-6. **Metadata:** Supply description, keywords, category, age-rating answers, support URL, privacy URL, review contact, and accurate screenshots. Screenshots should show the running product with non-sensitive sample content. [Apple: Screenshots](https://developer.apple.com/help/app-store-connect/manage-app-information/upload-app-previews-and-screenshots)
-7. **Privacy and price:** Complete the privacy questionnaire based on the shipping binary (currently no data collection), choose **Free**, and set availability. [Apple: Manage app privacy](https://developer.apple.com/help/app-store-connect/manage-app-information/manage-app-privacy) · [Apple: Set a price](https://developer.apple.com/help/app-store-connect/manage-app-pricing/set-a-price)
-8. **Review:** Select the processed build, add it for review, and submit. Approval and release happen in App Store Connect; configuration alone does not ensure acceptance. [Apple: Submit an app](https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/submit-an-app)
+3. **Validation:** End-to-end screen-capture verification is still waiting for the user to grant screen access. Complete the remaining [manual checks](TESTING.md), including the sandboxed signed app, fresh permissions, Retina/multiple displays, saving outside the sandbox through the save dialog, and login-item enable/disable. Test on macOS 14 and a current release before claiming both.
+4. **Store record:** Created as `6812333384`, using SKU `com.jo9900.Snaplet`. Keep the bundle identifier consistent with the existing record. [Apple: Add a new app](https://developer.apple.com/help/app-store-connect/create-an-app-record/add-a-new-app)
+5. **Archive and upload:** Build 0.1.0 (1) was uploaded with `xcodebuild -exportArchive`, `destination=upload`, and automatic signing. Processing is complete, the build is associated with the version, and its export-compliance declaration is saved. For later builds, use the Snaplet scheme and a Mac archive destination, and an Xcode version currently accepted by Apple. [Apple: Upload builds](https://developer.apple.com/help/app-store-connect/manage-builds/upload-builds)
+6. **Metadata:** English and Simplified Chinese descriptions, keywords, names, subtitles, and support and marketing URLs are saved. Simplified Chinese reuses the saved English screenshot. App Review contact details and the revised review notes below are saved. The Utilities category and age rating of **4+ with regional differences** are saved. Content Rights is saved as **No**, reflecting the local screenshot tool with no bundled third-party content or content services. [Apple: Screenshots](https://developer.apple.com/help/app-store-connect/manage-app-information/upload-app-previews-and-screenshots)
+7. **Privacy and price:** **Data Not Collected** is published in App Privacy, and English and Simplified Chinese privacy policy URLs are saved. **Free** is configured with a **$0.00** base price and free pricing in every region. Public availability is configured for **175 regions**, taking effect after release. [Apple: Manage app privacy](https://developer.apple.com/help/app-store-connect/manage-app-information/manage-app-privacy) · [Apple: Set a price](https://developer.apple.com/help/app-store-connect/manage-app-pricing/set-a-price)
+8. **Review:** Metadata validation passed. App Store Connect shows **Ready for Review**, **Draft Submissions (1)**, and **Item Ready to Submit** for version **0.1.0 (1)**. The final **Submit for Review** action has not been executed; this is a prepared draft, not a submitted review request. Approval and release happen in App Store Connect. [Apple: Submit an app](https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/submit-an-app)
 
-## Listing drafts
+## Listing copy
 
-Both localizations use the name **Snaplet**, category **Utilities**, price **Free**, and no in-app purchases. These drafts have not been entered into App Store Connect.
+Both localized names, subtitles, descriptions, and keywords below are saved, along with the **Utilities** category. **Free** pricing is configured for all regions, with no in-app purchases.
 
 | Field | English (U.S.) | 简体中文 |
 | --- | --- | --- |
-| Name | Snaplet | Snaplet |
+| Name | Snaplet: Capture & Annotate | Snaplet: Capture & Annotate |
 | Subtitle | Capture. Annotate. Copy. | 截图、标注、复制，简单顺手 |
 | Keywords | `screenshot,annotation,capture,markup,arrow,clipboard,rectangle,ellipse,text` | `屏幕截图,图片标注,文字标注,箭头标注,剪贴板,矩形框,椭圆框` |
 
@@ -63,7 +67,7 @@ Snaplet 免费且开源，没有账号、广告、打赏弹窗或统计追踪。
 需要 macOS 14 或以上，支持 Apple 芯片和 Intel Mac。截图前需要授予 macOS 屏幕捕捉权限。
 ```
 
-Shared draft URLs:
+Shared URLs (saved for both localizations):
 
 - Support: [Snaplet support](https://github.com/jo9900/snaplet/blob/main/docs/SUPPORT.md)
 - Privacy: [Snaplet privacy policy](https://github.com/jo9900/snaplet/blob/main/docs/PRIVACY.md)
@@ -75,11 +79,13 @@ The support page uses the owner's selected public email, shared with CocoPlayer 
 
 Mac screenshots must use **16:10**, at **1280 × 800**, **1440 × 900**, **2560 × 1600**, or **2880 × 1800** pixels. Provide **1–10** PNG or JPEG images with **no alpha channel or transparency**, showing the actual app. [Apple: Screenshot specifications](https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications)
 
-The included [editor screenshot](images/editor.png) is a 2560 × 1600 RGB PNG without an alpha channel. It renders the actual native editor with synthetic sample content and annotations. It has been visually checked, but has not been uploaded to App Store Connect.
+The included [editor screenshot](images/editor.png) is a 2560 × 1600 RGB PNG without an alpha channel. It renders the actual native editor with synthetic sample content and annotations. It has been visually checked, saved in the English App Store Connect listing, and reused for Simplified Chinese.
 
-## Suggested review notes
+## Saved review notes
 
-> Snaplet runs in the menu bar. Click its icon and start a capture, or press Command–Shift–2. Grant macOS screen capture permission, then drag a region. The editor supports text, arrows, lines, rectangles, and ellipses, with color and size controls. Copy to the clipboard or use Save to choose a PNG destination. Launch at login is optional and disabled by default. There are no accounts, purchases, ads, uploads, OCR, translation, or video recording.
+These revised notes, including the content-source explanation, are saved in App Store Connect.
+
+> Snaplet runs in the menu bar. Click its icon and start a capture, or press Command–Shift–2. Grant macOS screen capture permission, then drag a region. The editor supports text, arrows, lines, rectangles, and ellipses, with color and size controls. Copy to the clipboard or use Save to choose a PNG destination. Launch at login is optional and disabled by default. There are no accounts, purchases, ads, uploads, OCR, translation, or video recording. Snaplet bundles no third-party content and connects to no content service; it only creates and annotates screenshots locally at the user's request.
 
 Apple's screen capture permission terminology may mention recording even though the app captures still images only. Include fresh install permission steps in reviewer notes if the tested macOS version requires relaunching.
 
