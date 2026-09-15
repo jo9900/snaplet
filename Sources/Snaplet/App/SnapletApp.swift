@@ -1,7 +1,7 @@
 import AppKit
 
 @main
-enum StillmarkApp {
+enum SnapletApp {
     @MainActor
     static func main() {
         let application = NSApplication.shared

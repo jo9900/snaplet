@@ -6,12 +6,19 @@ Run `./scripts/test.sh` for automated behavior and image-output tests, and `./sc
 
 - macOS 26.6.2 on Apple silicon, Xcode 26.6: all 10 XCTest cases passed.
 - Universal Release build succeeded for arm64 and x86_64; Intel execution was not tested.
+- After the final rename to Snaplet, all 10 tests passed again. A universal archive signed
+  by YUAN ZHENG's personal development team passed strict code-signature verification.
+  A stable copy was installed at `~/Applications/Snaplet.app`; this is a development build,
+  not an App Store distribution package.
 - Inspected the native settings window and the compact editor using synthetic image content.
 - Exercised native canvas mouse-event callbacks, text insertion, and the Copy/Save buttons.
   Clipboard and saved PNGs were byte-identical at the fixture's original 2000 × 1200 resolution.
 - Screen access denial and its recovery message were observed. An authorized capture,
   physical mouse dragging, actual input-method composition, multiple displays, macOS 14,
   and launch-at-login across logout remain manual release checks.
+- The earlier ad hoc Stillmark build still reported missing screen access after the user's
+  permission change and one relaunch. Retest with the stable, signed Snaplet installation;
+  the renamed bundle has a different identity and may need its own permission entry.
 - Review fixes covered unsaved changes on quit, modal capture reentry, cancellation,
   native text undo isolation, Shift–Command–Z, and export feedback.
 

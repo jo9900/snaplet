@@ -14,7 +14,7 @@ final class EditorWindowController: NSWindowController, NSWindowDelegate {
         let window = NSWindow(contentRect: NSRect(origin: .zero, size: size),
                               styleMask: [.titled, .closable, .miniaturizable, .resizable],
                               backing: .buffered, defer: false)
-        window.title = "Stillmark"
+        window.title = "Snaplet"
         window.minSize = NSSize(width: 740, height: 440)
         window.isReleasedWhenClosed = false
         window.tabbingMode = .disallowed
@@ -75,7 +75,7 @@ final class EditorWindowController: NSWindowController, NSWindowDelegate {
             panel.canCreateDirectories = true
             let formatter = DateFormatter()
             formatter.dateFormat = "yyyy-MM-dd HH.mm.ss"
-            panel.nameFieldStringValue = "Stillmark \(formatter.string(from: Date())).png"
+            panel.nameFieldStringValue = "Snaplet \(formatter.string(from: Date())).png"
             panel.beginSheetModal(for: window) { [weak self] response in
                 guard response == .OK, let url = panel.url, let self else { return }
                 do {

@@ -1,6 +1,6 @@
-<p align="center"><img src="Resources/Assets.xcassets/AppIcon.appiconset/icon_128x128@2x.png" width="112" alt="Stillmark icon"></p>
+<p align="center"><img src="Resources/Assets.xcassets/AppIcon.appiconset/icon_128x128@2x.png" width="112" alt="Snaplet icon"></p>
 
-# Stillmark
+# Snaplet
 
 A small, free, open-source screenshot annotator for macOS. Capture, mark, copy.
 
@@ -28,39 +28,39 @@ No accounts, ads, donation prompts, analytics, OCR, translation, or video record
 Install Xcode 15 or later and select it in **Xcode → Settings → Locations → Command Line Tools**. The Xcode project is checked in and has no package dependencies.
 
 ```sh
-git clone https://github.com/jo9900/stillmark.git
-cd stillmark
-open Stillmark.xcodeproj
+git clone https://github.com/jo9900/snaplet.git
+cd snaplet
+open Snaplet.xcodeproj
 ```
 
-Choose the **Stillmark** scheme and **My Mac**, then Run. Select your own development team if Xcode asks for signing. For a local build without an Apple account:
+Choose the **Snaplet** scheme and **My Mac**, then Run. Select your own development team if Xcode asks for signing. For a local build without an Apple account:
 
 ```sh
 ./scripts/test.sh    # XCTest, ad hoc signed on your Mac
 ./scripts/build.sh   # Unsigned universal Release build
 ```
 
-The Release app is at `build/Build/Products/Release/Stillmark.app`. Unsigned build artifacts are for local development; use Xcode signing for a stable installed app and App Store distribution.
+The Release app is at `build/Build/Products/Release/Snaplet.app`. Unsigned build artifacts are for local development; use Xcode signing for a stable installed app and App Store distribution.
 
 After adding or removing source files, install [XcodeGen](https://github.com/yonaskolb/XcodeGen) and run `xcodegen generate`; the scripts do this automatically when XcodeGen is installed.
 
 ## Use
 
-1. Launch Stillmark and click its menu bar icon, or press **⌘⇧2**.
+1. Launch Snaplet and click its menu bar icon, or press **⌘⇧2**.
 2. Allow screen capture when macOS asks. You can change access in **System Settings → Privacy & Security → Screen & System Audio Recording** (called **Screen Recording** on older macOS versions). Relaunch if macOS requests it.
 3. Drag to choose a region. **Esc** cancels capture.
 4. Choose a drawing tool or add text. Select an annotation to move it, resize it, or update its style.
 5. Copy the image or save it as PNG. A cancelled save keeps the editor open.
 
-Turn on **Launch at Login** in Settings if you want Stillmark available after signing in. Keep the installed app in a stable location, such as `/Applications`, before enabling it.
+Turn on **Launch at Login** in Settings if you want Snaplet available after signing in. Keep the installed app in a stable location, such as `/Applications`, before enabling it.
 
-The system labels screenshot permission as screen recording because both use the same permission. Stillmark only captures still images.
+The system labels screenshot permission as screen recording because both use the same permission. Snaplet only captures still images.
 
 ## Project layout
 
 ```text
-Sources/Stillmark/    App, capture, annotation editor, and settings
-Tests/StillmarkTests/ Behavior and image-output checks
+Sources/Snaplet/    App, capture, annotation editor, and settings
+Tests/SnapletTests/ Behavior and image-output checks
 Resources/           Icon, app metadata, sandbox entitlements, privacy manifest
 scripts/             Build, test, and original icon generation
 docs/                Privacy policy, release preparation, manual verification
@@ -71,6 +71,6 @@ Regenerate the original icon with `swift scripts/generate-icon.swift` from the r
 
 ## Distribution
 
-Stillmark is intended to be free on the Mac App Store. **It has not been published or submitted.** This repository includes the sandbox configuration and privacy manifest; signing, real-device checks, store metadata, and Apple review are still required. See [App Store preparation](docs/APP_STORE.md) and [manual verification](docs/TESTING.md).
+Snaplet is intended to be free on the Mac App Store. **It has not been published or submitted.** This repository includes the sandbox configuration and privacy manifest; signing, real-device checks, store metadata, and Apple review are still required. See [App Store preparation](docs/APP_STORE.md) and [manual verification](docs/TESTING.md).
 
 Bug reports and focused pull requests are welcome. Include your macOS version, display scaling, and steps to reproduce. Avoid attaching private screenshots.

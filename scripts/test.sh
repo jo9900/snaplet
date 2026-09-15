@@ -5,7 +5,7 @@ cd "$(dirname "$0")/.."
 if command -v xcodegen >/dev/null 2>&1; then
   xcodegen generate
 fi
-xcodebuild -project Stillmark.xcodeproj -scheme Stillmark \
+xcodebuild -project Snaplet.xcodeproj -scheme Snaplet \
   -configuration Debug -destination 'platform=macOS' \
   -derivedDataPath build CODE_SIGN_IDENTITY=- DEVELOPMENT_TEAM= \
   test

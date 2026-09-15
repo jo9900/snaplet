@@ -1,4 +1,4 @@
-name: Stillmark
+name: Snaplet
 options:
   bundleIdPrefix: com.jo9900
   deploymentTarget:
@@ -11,58 +11,59 @@ settings:
     MARKETING_VERSION: "0.1.0"
     CURRENT_PROJECT_VERSION: "1"
     CODE_SIGN_STYLE: Automatic
+    DEVELOPMENT_TEAM: 54BTJHJKUU
     ENABLE_HARDENED_RUNTIME: YES
     SWIFT_STRICT_CONCURRENCY: complete
 targets:
-  Stillmark:
+  Snaplet:
     type: application
     platform: macOS
     sources:
-      - Sources/Stillmark
+      - Sources/Snaplet
       - Resources/Assets.xcassets
       - Resources/PrivacyInfo.xcprivacy
     info:
       path: Resources/Info.plist
       properties:
-        CFBundleDisplayName: Stillmark
+        CFBundleDisplayName: Snaplet
         CFBundleShortVersionString: $(MARKETING_VERSION)
         CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         LSApplicationCategoryType: public.app-category.utilities
         LSUIElement: true
         NSHighResolutionCapable: true
         NSHumanReadableCopyright: Copyright © 2026 jo9900
-        NSScreenCaptureUsageDescription: Stillmark captures the area you choose so you can annotate and save a screenshot.
+        NSScreenCaptureUsageDescription: Snaplet captures the area you choose so you can annotate and save a screenshot.
     entitlements:
-      path: Resources/Stillmark.entitlements
+      path: Resources/Snaplet.entitlements
       properties:
         com.apple.security.app-sandbox: true
         com.apple.security.files.user-selected.read-write: true
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.jo9900.Stillmark
+        PRODUCT_BUNDLE_IDENTIFIER: com.jo9900.Snaplet
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         ENABLE_APP_SANDBOX: YES
         ENABLE_USER_SELECTED_FILES: readwrite
-  StillmarkTests:
+  SnapletTests:
     type: bundle.unit-test
     platform: macOS
     sources:
-      - Tests/StillmarkTests
+      - Tests/SnapletTests
     dependencies:
-      - target: Stillmark
+      - target: Snaplet
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.jo9900.StillmarkTests
+        PRODUCT_BUNDLE_IDENTIFIER: com.jo9900.SnapletTests
         GENERATE_INFOPLIST_FILE: YES
-        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/Stillmark.app/Contents/MacOS/Stillmark"
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/Snaplet.app/Contents/MacOS/Snaplet"
         BUNDLE_LOADER: "$(TEST_HOST)"
 schemes:
-  Stillmark:
+  Snaplet:
     build:
       targets:
-        Stillmark: all
-        StillmarkTests: [test]
+        Snaplet: all
+        SnapletTests: [test]
     test:
       targets:
-        - StillmarkTests
+        - SnapletTests
       gatherCoverageData: true

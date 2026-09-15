@@ -1,5 +1,5 @@
 import XCTest
-@testable import Stillmark
+@testable import Snaplet
 
 final class CaptureGeometryTests: XCTestCase {
     func testRetinaCropConvertsBottomLeftToTopLeftPixels() {

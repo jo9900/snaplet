@@ -1,4 +1,4 @@
-# Stillmark
+# Snaplet
 
 - Native macOS 14+ app in Swift, AppKit and SwiftUI. Keep the app dependency-free.
 - Capture still images with ScreenCaptureKit. Do not add OCR, translation, recording,

@@ -15,10 +15,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FE5202717C5C23578E24EFF0"
-               BuildableName = "Stillmark.app"
-               BlueprintName = "Stillmark"
-               ReferencedContainer = "container:Stillmark.xcodeproj">
+               BlueprintIdentifier = "2EB4B0CF1D3602F77329D98E"
+               BuildableName = "Snaplet.app"
+               BlueprintName = "Snaplet"
+               ReferencedContainer = "container:Snaplet.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,10 +29,10 @@
             buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5663A943C78E80AE70764037"
-               BuildableName = "StillmarkTests.xctest"
-               BlueprintName = "StillmarkTests"
-               ReferencedContainer = "container:Stillmark.xcodeproj">
+               BlueprintIdentifier = "7ED6A8927BD94592D19B70AE"
+               BuildableName = "SnapletTests.xctest"
+               BlueprintName = "SnapletTests"
+               ReferencedContainer = "container:Snaplet.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,10 +47,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FE5202717C5C23578E24EFF0"
-            BuildableName = "Stillmark.app"
-            BlueprintName = "Stillmark"
-            ReferencedContainer = "container:Stillmark.xcodeproj">
+            BlueprintIdentifier = "2EB4B0CF1D3602F77329D98E"
+            BuildableName = "Snaplet.app"
+            BlueprintName = "Snaplet"
+            ReferencedContainer = "container:Snaplet.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -59,10 +59,10 @@
             parallelizable = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5663A943C78E80AE70764037"
-               BuildableName = "StillmarkTests.xctest"
-               BlueprintName = "StillmarkTests"
-               ReferencedContainer = "container:Stillmark.xcodeproj">
+               BlueprintIdentifier = "7ED6A8927BD94592D19B70AE"
+               BuildableName = "SnapletTests.xctest"
+               BlueprintName = "SnapletTests"
+               ReferencedContainer = "container:Snaplet.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -83,10 +83,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FE5202717C5C23578E24EFF0"
-            BuildableName = "Stillmark.app"
-            BlueprintName = "Stillmark"
-            ReferencedContainer = "container:Stillmark.xcodeproj">
+            BlueprintIdentifier = "2EB4B0CF1D3602F77329D98E"
+            BuildableName = "Snaplet.app"
+            BlueprintName = "Snaplet"
+            ReferencedContainer = "container:Snaplet.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -100,10 +100,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FE5202717C5C23578E24EFF0"
-            BuildableName = "Stillmark.app"
-            BlueprintName = "Stillmark"
-            ReferencedContainer = "container:Stillmark.xcodeproj">
+            BlueprintIdentifier = "2EB4B0CF1D3602F77329D98E"
+            BuildableName = "Snaplet.app"
+            BlueprintName = "Snaplet"
+            ReferencedContainer = "container:Snaplet.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
