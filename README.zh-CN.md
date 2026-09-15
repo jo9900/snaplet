@@ -71,6 +71,6 @@ project.yml          XcodeGen 工程配置
 
 ## 发布状态
 
-计划免费上架 Mac App Store，**目前尚未提交或上架**。已导出正式签名的商店安装包，仍需完成发布验证、商店资料和 Apple 审核。详见 [上架准备](docs/APP_STORE.md)、[人工验证](docs/TESTING.md) 与 [支持页面](docs/SUPPORT.md)。
+版本 **0.1.0 (1)** 已于 2026 年 9 月 15 日提交 Mac App Store，当前**等待 Apple 审核**。已设置审核通过后自动免费上架，目前商店尚未开放下载。详见 [提交状态](docs/APP_STORE.md)、[验证结果](docs/TESTING.md) 与 [支持页面](docs/SUPPORT.md)。
 
 欢迎提交问题和小范围改进。反馈请附 macOS 版本、显示器缩放设置及复现步骤，请勿上传包含隐私的截图。
