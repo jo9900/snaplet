@@ -12,4 +12,5 @@ Snaplet is a local screenshot and annotation app maintained by [jo9900](https://
 
 To remove images, delete the files you saved. To replace clipboard contents, copy something else. Removing the app does not remove screenshots you saved outside it.
 
-For privacy questions, [open an issue](https://github.com/jo9900/snaplet/issues) without including personal information or private screenshots.
+For privacy questions, email [adeliaehd85512b@gmail.com](mailto:adeliaehd85512b@gmail.com).
+For general help, see [Snaplet support](SUPPORT.md).

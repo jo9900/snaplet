@@ -71,6 +71,6 @@ Regenerate the original icon with `swift scripts/generate-icon.swift` from the r
 
 ## Distribution
 
-Snaplet is intended to be free on the Mac App Store. **It has not been published or submitted.** This repository includes the sandbox configuration and privacy manifest; signing, real-device checks, store metadata, and Apple review are still required. See [App Store preparation](docs/APP_STORE.md) and [manual verification](docs/TESTING.md).
+Snaplet is intended to be free on the Mac App Store. **It has not been published or submitted.** A signed App Store package has been exported; release checks, store metadata, and Apple review remain. See [App Store preparation](docs/APP_STORE.md), [manual verification](docs/TESTING.md), and [support](docs/SUPPORT.md).
 
 Bug reports and focused pull requests are welcome. Include your macOS version, display scaling, and steps to reproduce. Avoid attaching private screenshots.

@@ -2,7 +2,7 @@
 
 The selected product name is **Snaplet**, with bundle identifier `com.jo9900.Snaplet` and individual developer team **YUAN ZHENG (`54BTJHJKUU`)**. The intended App Store price is **Free**, with no in-app purchases.
 
-**Current release status:** A universal, development-signed archive at `build/Snaplet.xcarchive` was built successfully and passed code-signature verification. The first App Store export failed with `No Accounts`, a missing `Mac Installer Distribution` certificate, and no matching provisioning profile. The Xcode account/signing setup must be completed before retrying export. No successful App Store export, upload, submission, or live listing has been recorded. The metadata below is a draft.
+**Current release status:** The universal archive at `build/Snaplet.xcarchive` passed code-signature verification. After signing into Xcode, App Store export succeeded at `build/AppStore/Snaplet.pkg`: Cloud Managed Apple Distribution app signing, a Mac Team Store provisioning profile, and a Mac Developer Installer certificate all belong to team `54BTJHJKUU`. The package signature was verified. No successful upload, submission, or live listing has been recorded. The metadata below is a draft.
 
 ## Included in the project
 
@@ -14,8 +14,8 @@ The selected product name is **Snaplet**, with bundle identifier `com.jo9900.Sna
 
 ## Owner steps before submission
 
-1. **Developer account:** Sign the existing account into Xcode and confirm access to team `54BTJHJKUU` and the current program agreement. Free apps can be distributed under that agreement; paid-app agreements are for paid apps and in-app purchases. [Apple: Agreements](https://developer.apple.com/help/app-store-connect/manage-agreements/sign-and-update-agreements)
-2. **Signing:** The project already selects the team. Complete automatic signing for `com.jo9900.Snaplet`, including the App Store app-signing identity, Mac Installer Distribution identity, and matching distribution profile. Retry local export with `method=app-store-connect`, `destination=export`, and `signingStyle=automatic`. The successful development archive still needs distribution signing. [Apple: Certificates](https://developer.apple.com/help/account/certificates/certificates-overview/)
+1. **Developer account:** Xcode is signed into the existing account and has access to team `54BTJHJKUU`. Confirm the current program agreement before submission. Free apps can be distributed under that agreement; paid-app agreements are for paid apps and in-app purchases. [Apple: Agreements](https://developer.apple.com/help/app-store-connect/manage-agreements/sign-and-update-agreements)
+2. **Signing:** Automatic distribution signing and local export have succeeded for `com.jo9900.Snaplet`, using `method=app-store-connect`, `destination=export`, and `signingStyle=automatic`. Keep signing assets and exported packages outside version control. [Apple: Certificates](https://developer.apple.com/help/account/certificates/certificates-overview/)
 3. **Validation:** Run the tests and the [manual checks](TESTING.md), including the sandboxed signed app, fresh permissions, Retina/multiple displays, saving outside the sandbox through the save dialog, and login-item enable/disable. Test on macOS 14 and a current release before claiming both.
 4. **Store record:** Create a macOS app record for Snaplet and its registered bundle identifier. Confirm that the selected name is available in App Store Connect. [Apple: Add a new app](https://developer.apple.com/help/app-store-connect/create-an-app-record/add-a-new-app)
 5. **Archive and upload:** In Xcode, select the Snaplet scheme and a Mac archive destination, choose **Product → Archive**, then validate and distribute through Organizer to App Store Connect. Use an Xcode version currently accepted by Apple. [Apple: Upload builds](https://developer.apple.com/help/app-store-connect/manage-builds/upload-builds)
@@ -65,11 +65,11 @@ Snaplet 免费且开源，没有账号、广告、打赏弹窗或统计追踪。
 
 Shared draft URLs:
 
-- Support: [github.com/jo9900/snaplet/issues](https://github.com/jo9900/snaplet/issues)
+- Support: [Snaplet support](https://github.com/jo9900/snaplet/blob/main/docs/SUPPORT.md)
 - Privacy: [Snaplet privacy policy](https://github.com/jo9900/snaplet/blob/main/docs/PRIVACY.md)
 - Marketing: [github.com/jo9900/snaplet](https://github.com/jo9900/snaplet)
 
-Before submission, verify that these URLs are publicly accessible and add owner-provided contact information to the support destination. Apple requires contact information on the support site. [Apple: Support URL requirements](https://developer.apple.com/help/app-store-connect/reference/app-information/platform-version-information)
+The support page uses the owner's selected public email, shared with CocoPlayer support. Before submission, verify that these URLs are publicly accessible. Apple requires contact information on the support site. Private App Review contact details belong in App Store Connect and must not be committed to this repository. [Apple: Support URL requirements](https://developer.apple.com/help/app-store-connect/reference/app-information/platform-version-information)
 
 ### Store screenshots
 
